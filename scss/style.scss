@@ -1,0 +1,105 @@
+$main-color: #3ea1d1;
+$black: #333;
+$font-base: "Noto Sans", sans-serif;
+
+$header-height-sp: 60px;
+$header-height-pc: 70px;
+
+// ブレイクポイントのマップ定義
+$breakpoints: (
+  sm: 600px,
+  md: 768px,
+  lg: 900px,
+  xl: 1280px
+);
+
+// メディアクエリ用のミックスイン
+@mixin mq($breakpoint) {
+  @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
+
+body{
+  font-family: $font-base;
+  color: $black;
+  font-size: 20px;
+  line-height: 170%;
+  font-weight: 300;
+}
+.inner{
+  padding-inline: 15px;
+}
+.header{
+  width: 375px;
+  height: 60px;
+  @include mq(md) {
+    width: 1280px;
+    height: 70px;
+  }
+
+}
+.header-menu__inner{
+  padding-left: 15px;
+  padding-right: 21px;
+}
+.header__logo{
+  a{
+    img{
+      width: 120px;
+      display: block;
+    }
+  }
+}
+
+.header__list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: calc(32px - 8px * 2);
+}
+.header__item{
+
+}
+.header__nav{
+background: $main-color;
+width: 270px;
+height: calc(100% - $header-height-sp);
+position: fixed;
+right: 0;
+top: $header-height-sp;
+padding: calc(40px - 8px) 15px;
+}
+.header__lists{
+
+}
+.header__list{
+
+}
+.header__link{
+  display: inline-block;
+  padding-block: 8px;
+  color: #fff;
+  font-size: 18px;
+}
+.drawer-icon{
+  width: 30px;
+  height: 18px;
+  position: relative;
+}
+.drawer-icon__bar{
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: 0;
+  background: $main-color;
+  &:nth-child(1) {
+    top: 0;
+  }
+  &:nth-child(2) {
+    top: 8px;
+  }
+  &:nth-child(3) {
+    top: 16px;
+  }
+}
