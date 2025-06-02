@@ -236,9 +236,21 @@ body {
   flex-direction: column;
   gap: 34px;
 }
+@media screen and (min-width: 768px) {
+  .concept__content {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
 
 .concept__image {
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .concept__image {
+    width: 50%;
+    flex-shrink: 0;
+  }
 }
 .concept__image img {
   width: 100%;

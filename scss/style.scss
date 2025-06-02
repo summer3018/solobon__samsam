@@ -283,9 +283,19 @@ body{
   display: flex;
   flex-direction: column;
   gap: 34px;
+
+  @include mq(md) {
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 .concept__image{
   text-align: center;
+
+  @include mq(md) {
+    width: calc(600px /1200px * 100%);
+    flex-shrink: 0;
+  }
   img{
     width: 100%;
   }
