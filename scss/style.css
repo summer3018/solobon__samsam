@@ -17,6 +17,10 @@ body {
   }
 }
 
+.section__content {
+  margin-top: 46px;
+}
+
 .heading {
   font-size: 30px;
   font-weight: 600;
@@ -229,7 +233,6 @@ body {
 }
 
 .concept__content {
-  margin-top: 46px;
   display: flex;
   flex-direction: column;
   gap: 34px;
