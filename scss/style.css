@@ -240,7 +240,8 @@ body {
 @media screen and (min-width: 768px) {
   .concept__content {
     flex-direction: row;
-    gap: 80px;
+    align-items: center;
+    gap: 6.6666666667%;
   }
 }
 
@@ -257,9 +258,33 @@ body {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .concept__message {
+    flex-grow: 1;
+  }
+}
+
 .concept__title {
   font-size: 20px;
   font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .concept__title {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .concept__title {
+    font-size: 20px;
+  }
+}
+
+.concept__text {
   margin-top: 22px;
+}
+@media screen and (min-width: 768px) {
+  .concept__text {
+    margin-top: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
