@@ -171,6 +171,16 @@ body {
   top: 16px;
 }
 
+.main {
+  display: grid;
+  gap: 96px;
+}
+@media screen and (min-width: 768px) {
+  .main {
+    gap: 160px;
+  }
+}
+
 .fv__inner {
   position: relative;
 }

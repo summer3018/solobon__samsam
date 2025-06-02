@@ -76,6 +76,8 @@ body{
     background-color: $main-color;
   }
 }
+
+
 // header(ヘッダー)
 .header{
   height: $header-height-sp;
@@ -208,7 +210,12 @@ body{
 }
 // main
 .main{
+  display: grid;
+  gap: 96px;
 
+  @include mq(md) {
+    gap: 160px;
+  }
 }
 .fv{
 
@@ -250,5 +257,5 @@ body{
   }
 }
 .fv__text{
-margin-top: 16px;
+  margin-top: 16px;
 }
