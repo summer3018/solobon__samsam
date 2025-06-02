@@ -27,6 +27,7 @@ body{
   line-height: 170%;
   font-weight: 300;
 }
+
 .inner{
   padding-inline: 15px;
   @include mq(md) {
@@ -35,6 +36,7 @@ body{
     padding-inline: 40px;
   }
 }
+
 .header{
   height: $header-height-sp;
   @include mq(md) {
@@ -42,12 +44,14 @@ body{
   }
 
 }
+
 .header__inner{
   height: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .header__logo{
   a{
     img{
@@ -56,6 +60,7 @@ body{
     }
   }
 }
+
 .header__icon{
   @include mq(md) {
     display: none;
@@ -74,9 +79,11 @@ body{
     gap: 46px;
   }
 }
+
 .header__list{
 
 }
+
 .header__link{
   display: inline-block;
   padding-block: 8px;
@@ -88,9 +95,11 @@ body{
     font-size: 16px;
   }
 }
+
 .header__item{
 
 }
+
 .header__nav{
   background: $main-color;
   width: 270px;
@@ -115,8 +124,6 @@ body{
   }
 }
 
-
-
 .drawer-icon{
   width: 30px;
   height: 18px;
@@ -140,6 +147,7 @@ body{
     }
   }
 }
+
 .drawer-icon__bar{
   position: absolute;
   width: 30px;
