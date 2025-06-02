@@ -153,6 +153,8 @@ body {
     margin-block: auto;
     left: 0;
     padding: 80px 40px;
+    height: -moz-fit-content;
+    height: fit-content;
     background-color: #fff;
   }
 }
@@ -160,9 +162,15 @@ body {
 .fv__title {
   font-size: 26px;
   font-weight: 600;
+  line-height: 1.7;
 }
 .fv__title br {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .fv__title br {
+    display: inline;
+  }
 }
 
 .fv__text {

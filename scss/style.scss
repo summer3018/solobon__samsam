@@ -195,14 +195,19 @@ body{
     margin-block: auto;
     left: 0;
     padding: 80px 40px;
+    height: fit-content;
     background-color: #fff;
   }
 }
 .fv__title{
   font-size: 26px;
   font-weight: 600;
+  line-height: 1.7;
   br{
     display: none;
+    @include mq(md) {
+      display: inline;
+    }
   }
 }
 .fv__text{
