@@ -31,20 +31,24 @@ body{
   padding-inline: 15px;
   @include mq(md) {
     max-width: calc(1200px + 40px * 2);
+    margin-inline: auto;
+    padding-inline: 40px;
   }
 }
 .header{
   width: 375px;
-  height: 60px;
+  height: $header-height-sp;
   @include mq(md) {
     width: 1280px;
     height: 70px;
   }
 
 }
-.header-menu__inner{
-  padding-left: 15px;
-  padding-right: 21px;
+.header__inner{
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header__logo{
   a{
