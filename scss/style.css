@@ -39,6 +39,18 @@ body {
   }
 }
 
+.button {
+  display: inline-block;
+  min-width: 158px;
+  padding: 11px 12px;
+  text-align: center;
+  border: 1px solid #3ea1d1;
+  background-color: #fff;
+  color: #3ea1d1;
+  font-size: 14px;
+  letter-spacing: 0.02px;
+}
+
 .header {
   height: 60px;
 }
