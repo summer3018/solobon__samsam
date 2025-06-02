@@ -62,7 +62,7 @@ body{
 .button{
   display: inline-block;
   min-width: 158px;
-  padding: calc(12px - 1px) 12px;
+  padding: calc(12px - 1px);
   text-align: center;
   border: 1px solid $main-color;
   background-color: #fff;
