@@ -1,7 +1,5 @@
-const hamburger = document.querySelector(".header__icon");
-const navMenu = document.querySelector(".drawer-icon");
-
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
+document.querySelector("#js-drawer-button").addEventListener("click", function(e) {
+  e.preventDefault();
+  document.querySelector("#js-drawer-button").classList.toggle("is-checked");
+  document.querySelector("#js-drawer-content").classList.toggle("is-checked");
 });
