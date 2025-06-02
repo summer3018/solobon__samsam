@@ -120,6 +120,7 @@ body {
   padding: 32px 15px;
   transform: translateX(100%);
   transition: transform 0.4s;
+  z-index: 1000;
 }
 .header__nav.is-checked {
   transform: translateX(0);
