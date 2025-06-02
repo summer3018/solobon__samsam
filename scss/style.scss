@@ -271,19 +271,25 @@ body{
 
 }
 .concept__content{
-
+  margin-top: 46px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
 }
 .concept__image{
+  text-align: center;
   img{
-
+    width: 100%;
   }
 }
 .concept__message{
 
 }
 .concept__title{
-
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 22px;
 }
 .concept__text{
-  
+
 }

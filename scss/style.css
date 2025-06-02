@@ -227,4 +227,24 @@ body {
 .fv__text {
   margin-top: 16px;
 }
+
+.concept__content {
+  margin-top: 46px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.concept__image {
+  text-align: center;
+}
+.concept__image img {
+  width: 100%;
+}
+
+.concept__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 22px;
+}
 /*# sourceMappingURL=style.css.map */
