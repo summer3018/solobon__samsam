@@ -36,11 +36,9 @@ body{
   }
 }
 .header{
-  width: 375px;
   height: $header-height-sp;
   @include mq(md) {
-    width: 1280px;
-    height: 70px;
+    height: $header-height-pc;
   }
 
 }
@@ -56,6 +54,11 @@ body{
       width: 120px;
       display: block;
     }
+  }
+}
+.header__icon{
+  @include mq(md) {
+    display: none;
   }
 }
 
@@ -82,6 +85,7 @@ body{
   
   @include mq(md) {
     color: $black;
+    font-size: 16px;
   }
 }
 .header__item{
@@ -110,9 +114,7 @@ body{
     transform: translateX(0);
   }
 }
-.header__lists{
 
-}
 
 
 .drawer-icon{
