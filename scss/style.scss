@@ -59,36 +59,45 @@ body{
   }
 }
 
-.header__list{
+.header__lists{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: calc(32px - 8px * 2);
 }
+.header__list{
+
+}
 .header__item{
 
 }
 .header__nav{
-background: $main-color;
-width: 270px;
-height: calc(100% - $header-height-sp);
-position: fixed;
-right: 0;
-top: $header-height-sp;
-padding: calc(40px - 8px) 15px;
-transform: translateX(100%);
-transition: transform 0.4s;
+  background: $main-color;
+  width: 270px;
+  height: calc(100% - $header-height-sp);
+  position: fixed;
+  right: 0;
+  top: $header-height-sp;
+  padding: calc(40px - 8px) 15px;
+  transform: translateX(100%);
+  transition: transform 0.4s;
 
-&.is-checked{
-  transform: translateX(0);
-}
+  &.is-checked{
+    transform: translateX(0);
+  }
+  @include mq(md) {
+    background: transparent;
+    width: auto;
+    height: auto;
+    position: static;
+    padding: 0;
+    transform: translateX(0);
+  }
 }
 .header__lists{
 
 }
-.header__list{
 
-}
 .header__link{
   display: inline-block;
   padding-block: 8px;
