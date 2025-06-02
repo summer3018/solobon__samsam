@@ -36,7 +36,23 @@ body{
     padding-inline: 40px;
   }
 }
+// 共通パーツ
+.heading{
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  line-height: 100%;
 
+  &::after{
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: $main-color;
+  }
+}
 // header(ヘッダー)
 .header{
   height: $header-height-sp;
