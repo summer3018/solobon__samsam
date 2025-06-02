@@ -76,6 +76,11 @@ position: fixed;
 right: 0;
 top: $header-height-sp;
 padding: calc(40px - 8px) 15px;
+transform: translateX(100%);
+
+&.is-checked{
+  transform: translateX(0);
+}
 }
 .header__lists{
 

@@ -55,6 +55,10 @@ body {
   right: 0;
   top: 60px;
   padding: 32px 15px;
+  transform: translateX(100%);
+}
+.header__nav.is-checked {
+  transform: translateX(0);
 }
 
 .header__link {
