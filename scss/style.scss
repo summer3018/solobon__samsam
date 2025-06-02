@@ -52,6 +52,15 @@ body{
     height: 1px;
     background: $main-color;
   }
+  
+  @include mq(md) {
+    font-size: 40px;
+    gap: 24px;
+  }
+}
+
+.button{
+
 }
 // header(ヘッダー)
 .header{

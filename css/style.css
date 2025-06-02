@@ -32,6 +32,12 @@ body {
   height: 1px;
   background: #3ea1d1;
 }
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 40px;
+    gap: 24px;
+  }
+}
 
 .header {
   height: 60px;
