@@ -37,6 +37,7 @@ body{
   }
 }
 
+// header(ヘッダー)
 .header{
   height: $header-height-sp;
   @include mq(md) {
