@@ -69,6 +69,18 @@ body {
   height: 18px;
   position: relative;
 }
+.drawer-icon.is-checked .drawer-icon__bar:nth-child(1), .drawer-icon.is-checked .drawer-icon__bar:nth-child(3) {
+  top: 9px;
+}
+.drawer-icon.is-checked .drawer-icon__bar:nth-child(1) {
+  transform: rotate(45deg);
+}
+.drawer-icon.is-checked .drawer-icon__bar:nth-child(2) {
+  display: none;
+}
+.drawer-icon.is-checked .drawer-icon__bar:nth-child(3) {
+  transform: rotate(-45deg);
+}
 
 .drawer-icon__bar {
   position: absolute;
@@ -76,6 +88,7 @@ body {
   height: 2px;
   left: 0;
   background: #3ea1d1;
+  transition: top 0.4s, transform 0.4s;
 }
 .drawer-icon__bar:nth-child(1) {
   top: 0;
