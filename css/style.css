@@ -46,6 +46,25 @@ body {
   align-items: flex-end;
   gap: 16px;
 }
+@media screen and (min-width: 768px) {
+  .header__lists {
+    flex-direction: row;
+    align-items: center;
+    gap: 46px;
+  }
+}
+
+.header__link {
+  display: inline-block;
+  padding-block: 8px;
+  color: #fff;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .header__link {
+    color: #333;
+  }
+}
 
 .header__nav {
   background: #3ea1d1;
@@ -70,13 +89,6 @@ body {
     padding: 0;
     transform: translateX(0);
   }
-}
-
-.header__link {
-  display: inline-block;
-  padding-block: 8px;
-  color: #fff;
-  font-size: 18px;
 }
 
 .drawer-icon {
