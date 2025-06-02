@@ -29,6 +29,9 @@ body{
 }
 .inner{
   padding-inline: 15px;
+  @include mq(md) {
+    max-width: calc(1200px + 40px * 2);
+  }
 }
 .header{
   width: 375px;
