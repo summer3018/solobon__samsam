@@ -20,6 +20,11 @@ body {
 .section__content {
   margin-top: 46px;
 }
+@media screen and (min-width: 768px) {
+  .section__content {
+    margin-top: 64px;
+  }
+}
 
 .heading {
   font-size: 30px;
