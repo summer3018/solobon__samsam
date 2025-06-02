@@ -175,15 +175,28 @@ body{
 
 }
 .fv__inner{
-
+  position: relative;
 }
 .fv__image{
+  @include mq(md) {
+    max-width: 990px;
+    margin-left: auto;
+    display: block;
+  }
   img{
 
   }
 }
 .fv__message{
   margin-top: 30px;
+  @include mq(md) {
+    position: absolute;
+    inset-block: 0;
+    margin-block: auto;
+    left: 0;
+    padding: 80px 40px;
+    background-color: #fff;
+  }
 }
 .fv__title{
   font-size: 26px;

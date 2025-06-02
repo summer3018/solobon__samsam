@@ -132,8 +132,29 @@ body {
   top: 16px;
 }
 
+.fv__inner {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .fv__image {
+    max-width: 990px;
+    margin-left: auto;
+    display: block;
+  }
+}
 .fv__message {
   margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .fv__message {
+    position: absolute;
+    inset-block: 0;
+    margin-block: auto;
+    left: 0;
+    padding: 80px 40px;
+    background-color: #fff;
+  }
 }
 
 .fv__title {
