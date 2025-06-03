@@ -1,6 +1,6 @@
 $main-color: #3ea1d1;
 $black: #333;
-$font-base: "Noto Sans", sans-serif;
+$font-base: 'Noto Serif JP', serif;
 
 $header-height-sp: 60px;
 $header-height-pc: 70px;
@@ -396,6 +396,10 @@ body{
   position: relative;
   z-index: 2;
   color: #fff;
+
+  @include mq(md) {
+    width: calc(600px / 1200px * 100%);
+  }
 }
 .about__title{
   font-size: 20px;
