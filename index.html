@@ -269,11 +269,14 @@
     <div class="contact__inner inner">
       <h2 class="heading section__head">Contact</h2>
       <form action="" class="contact__form">
-        <p class="contact__text"></p>
+        <p class="contact__text"><span class="is-required">＊</span>は入力必須項目です</p>
         <div class="contact__items">
           <div class="contact__items contact-control">
             <div class="contact-control__head">
-              <label for="" class="form-label"></label>
+              <label for="" class="form-label">
+                お名前
+                <span class="form-labae__required">＊</span>
+              </label>
             </div>
             <div class="contact-control__input">
               <input
@@ -287,7 +290,10 @@
           <!-- email -->
           <div class="contact__items contact-control">
             <div class="contact-control__head">
-              <label for="your-email" class="form-label"></label>
+              <label for="your-email" class="form-label">
+                メールアドレス
+                <span class="form-labae__required">＊</span>
+              </label>
             </div>
             <div class="contact-control__input">
               <input
@@ -301,7 +307,10 @@
           <!-- ラジオボタン -->
           <div class="contact__items contact-control">
             <div class="contact-control__head">
-              <span class="form-label"></span>
+              <span class="form-label">
+                法人/個人の選択
+                <span class="form-labae__required">＊</span>
+              </span>
             </div>
             <div class="contact-control__input">
               <div class="contact-control__radio">
@@ -326,17 +335,19 @@
               </div>
             </div>
           </div>
-
+          <!-- テキストエリア -->
           <div class="contact__items contact-control">
             <div class="contact-control__head">
-              <label for="your-message" class="form-label"></label>
+              <label for="your-message" class="form-label">
+                お問い合わせ内容
+                <span class="form-labae__required">＊</span>
+              </label>
             </div>
             <div class="contact-control__input">
               <textarea
                 name="your-message"
                 id="your-message"
                 class="form-textarea"
-                rows="5"
               ></textarea>
             </div>
           </div>
