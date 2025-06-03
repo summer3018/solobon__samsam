@@ -479,6 +479,7 @@ body{
 .news__inner {
 @include mq(md) {
   max-width: calc(1040px + 40px * 2);
+  padding-inline: 40px;
 }
 }
 .news__cards{
@@ -519,6 +520,7 @@ body{
 
   @include mq(md) {
     flex-grow: 1;
+    margin-top: 0;
   }
 }
 .news-card__time{
@@ -550,4 +552,8 @@ body{
 .news__button{
   margin-top: 42px;
   text-align: center;
+
+  @include mq(md) {
+    margin-top: 44px;
+  }
 }

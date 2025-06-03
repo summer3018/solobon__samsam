@@ -439,6 +439,7 @@ body {
 @media screen and (min-width: 768px) {
   .news__inner {
     max-width: 1120px;
+    padding-inline: 40px;
   }
 }
 
@@ -483,6 +484,7 @@ body {
 @media screen and (min-width: 768px) {
   .news-card__body {
     flex-grow: 1;
+    margin-top: 0;
   }
 }
 
@@ -519,4 +521,9 @@ body {
 .news__button {
   margin-top: 42px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .news__button {
+    margin-top: 44px;
+  }
 }/*# sourceMappingURL=style.css.map */
