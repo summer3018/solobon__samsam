@@ -341,13 +341,13 @@ body{
 
   @include mq(md) {
     flex-direction: row;
-    gap: 60px;
+    gap: 40px;
   }
   @include mq(lg) {
-    gap: 90px;
+    gap: 60px;
   }
   @include mq(xl) {
-    gap: 160px;
+    gap: 90px;
   }
 }
 .feature__card{
@@ -367,4 +367,12 @@ body{
   font-weight: 600;
   text-align: center;
   padding: 26px;
+}
+
+// about
+.about{
+  background: url("../images/sp/about-bg.jpg") no-repeat center center;
+  @include mq(md) {
+    background: url("../images/pc/about-bg.jpg") no-repeat center center;
+  }
 }

@@ -300,17 +300,17 @@ body {
 @media screen and (min-width: 768px) {
   .feature__cards {
     flex-direction: row;
-    gap: 60px;
+    gap: 40px;
   }
 }
 @media screen and (min-width: 900px) {
   .feature__cards {
-    gap: 90px;
+    gap: 60px;
   }
 }
 @media screen and (min-width: 1280px) {
   .feature__cards {
-    gap: 160px;
+    gap: 90px;
   }
 }
 
@@ -328,4 +328,13 @@ body {
   font-weight: 600;
   text-align: center;
   padding: 26px;
+}
+
+.about {
+  background: url("../images/sp/about-bg.jpg") no-repeat center center;
+}
+@media screen and (min-width: 768px) {
+  .about {
+    background: url("../images/pc/about-bg.jpg") no-repeat center center;
+  }
 }/*# sourceMappingURL=style.css.map */
