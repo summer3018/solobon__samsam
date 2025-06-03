@@ -480,10 +480,13 @@ body{
 
 }
 .news__cards{
-
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 .news__card{
-
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e0e0e0;
 }
 .news-card{
 
@@ -494,17 +497,25 @@ body{
   }
 }
 .news-card__body{
-
+  margin-top: 16px;
 }
 .news-card__time{
   font-size: 14px;
   font-weight: 300;
+  display: block;
 }
 .news-card__title{
   font-size: 16px;
   font-weight: 600;
+  margin-top: 10px;
 }
 .news-card__text{
+  margin-top: 14px;
+  color: #888;
   font-size: 14px;
   font-weight: 300;
+
+}
+.news__button{
+
 }
