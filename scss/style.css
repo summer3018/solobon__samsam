@@ -534,12 +534,30 @@ body {
   flex-direction: column;
   gap: 32px;
 }
+@media screen and (min-width: 768px) {
+  .concept2__inner {
+    flex-direction: row-reverse;
+    gap: 80px;
+  }
+}
 
 .concept2__image {
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .concept2__image {
+    width: 50%;
+    flex-shrink: 0;
+  }
+}
 .concept2__image img {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .concept2__message {
+    flex-grow: 1;
+  }
 }
 
 .concept2__title {
