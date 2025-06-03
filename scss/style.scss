@@ -429,7 +429,7 @@ body{
 
   @include mq(md) {
     flex-direction: row;
-    gap: 60px;
+    gap: 50px;
   }
 
   @include mq(lg) {
