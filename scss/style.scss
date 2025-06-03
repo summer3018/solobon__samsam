@@ -416,6 +416,11 @@ body{
 }
 .products__inner{
   padding-inline: 56px;
+
+  @include mq(md) {
+    max-width: calc(940px + 40px * 2);
+    padding-inline: 40px;
+  }
 }
 .products__cards{
   display: flex;
@@ -424,6 +429,10 @@ body{
 
   @include mq(md) {
     flex-direction: row;
+    gap: 60px;
+  }
+
+  @include mq(lg) {
     gap: 80px;
   }
 }

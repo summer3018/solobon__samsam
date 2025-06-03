@@ -377,6 +377,12 @@ body {
 .products__inner {
   padding-inline: 56px;
 }
+@media screen and (min-width: 768px) {
+  .products__inner {
+    max-width: 1020px;
+    padding-inline: 40px;
+  }
+}
 
 .products__cards {
   display: flex;
@@ -386,6 +392,11 @@ body {
 @media screen and (min-width: 768px) {
   .products__cards {
     flex-direction: row;
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .products__cards {
     gap: 80px;
   }
 }
