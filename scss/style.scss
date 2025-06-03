@@ -477,16 +477,26 @@ body{
 
 }
 .news__inner {
-
+@include mq(md) {
+  max-width: calc(1040px + 40px * 2);
+}
 }
 .news__cards{
   display: flex;
   flex-direction: column;
   gap: 28px;
+
+  @include mq(md) {
+    gap: 24px;
+  }
 }
 .news__card{
   padding-bottom: 28px;
   border-bottom: 1px solid #e0e0e0;
+
+  @include mq(md) {
+    padding-bottom: 24px;
+  }
 }
 .news-card{
   @include mq(md) {

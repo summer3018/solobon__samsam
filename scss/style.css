@@ -437,15 +437,31 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .news__inner {
+    max-width: 1120px;
+  }
+}
+
 .news__cards {
   display: flex;
   flex-direction: column;
   gap: 28px;
 }
+@media screen and (min-width: 768px) {
+  .news__cards {
+    gap: 24px;
+  }
+}
 
 .news__card {
   padding-bottom: 28px;
   border-bottom: 1px solid #e0e0e0;
+}
+@media screen and (min-width: 768px) {
+  .news__card {
+    padding-bottom: 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
