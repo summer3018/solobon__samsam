@@ -373,4 +373,56 @@ body {
   font-size: 14px;
   font-weight: 600;
 }
+
+.products__inner {
+  padding-inline: 56px;
+}
+
+.products__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .products__cards {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+
+.products-card__image {
+  text-align: center;
+}
+.products-card__image img {
+  width: 100%;
+}
+
+.products-card__body {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .products-card__body {
+    margin-top: 18px;
+  }
+}
+
+.products-card__title {
+  font-size: 14px;
+}
+
+.products-card__price {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #989898;
+}
+
+.products__button {
+  text-align: center;
+  margin-top: 42px;
+}
+@media screen and (min-width: 768px) {
+  .products__button {
+    margin-top: 44px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
