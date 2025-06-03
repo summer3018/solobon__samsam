@@ -434,4 +434,19 @@ body {
   .products__button {
     margin-top: 44px;
   }
+}
+
+.news-card__time {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.news-card__title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.news-card__text {
+  font-size: 14px;
+  font-weight: 300;
 }/*# sourceMappingURL=style.css.map */
