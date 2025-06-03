@@ -528,4 +528,38 @@ body {
     margin-top: 44px;
   }
 }
+
+.concept2__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.concept2__image {
+  text-align: center;
+}
+.concept2__image img {
+  width: 100%;
+}
+
+.concept2__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .concept2__title {
+    font-size: 28px;
+  }
+}
+
+.concept2__text {
+  margin-top: 22px;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .concept2__text {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
 /*# sourceMappingURL=style.css.map */

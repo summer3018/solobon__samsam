@@ -557,3 +557,38 @@ body{
     margin-top: 44px;
   }
 }
+
+// concept2
+.concept2{
+
+}
+.concept2__inner{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.concept2__image{
+  text-align: center;
+img{
+  width: 100%;
+}
+}
+.concept2__message{
+
+}
+.concept2__title{
+  font-size: 20px;
+  font-weight: 600;
+  @include mq(md) {
+    font-size: 28px;
+    
+  }
+}
+.concept2__text{
+  margin-top: 22px;
+  font-size: 14px;
+  @include mq(md) {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
