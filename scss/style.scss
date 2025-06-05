@@ -596,8 +596,9 @@ img{
   }
 }
 .concept2__text{
-  margin-top: 22px;
   font-size: 14px;
+  margin-top: 22px;
+
   @include mq(md) {
     font-size: 16px;
     font-weight: 300;

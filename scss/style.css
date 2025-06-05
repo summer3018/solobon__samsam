@@ -571,8 +571,8 @@ body {
 }
 
 .concept2__text {
-  margin-top: 22px;
   font-size: 14px;
+  margin-top: 22px;
 }
 @media screen and (min-width: 768px) {
   .concept2__text {
