@@ -561,8 +561,8 @@ body {
 }
 
 .concept2__title {
-  font-size: 20px;
   font-weight: 600;
+  font-size: 20px;
 }
 @media screen and (min-width: 768px) {
   .concept2__title {
