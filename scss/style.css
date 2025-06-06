@@ -680,16 +680,33 @@ body {
   resize: vertical;
 }
 
+.form-checkbox__input {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
 .form-checkbox__text {
-  text-align: center;
-  font-family: "Noto Serif JP";
   font-size: 16px;
-  font-weight: 300;
-  line-height: 170%; /* 27.2px */
-  margin-top: 28px;
+  padding-left: 30px;
 }
 .form-checkbox__text a {
   color: #3ea1d1;
-  border-bottom: 1px solid #3ea1d1;
+  text-decoration: underline;
+}
+.form-checkbox__text::before, .form-checkbox__text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  inset-block: 0;
+  margin-block: 0;
+}
+.form-checkbox__text::before {
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border: 1px solid #3ea1d1;
 }
 /*# sourceMappingURL=style.css.map */
