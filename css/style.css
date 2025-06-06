@@ -706,6 +706,7 @@ body {
 }
 
 .form-checkbox__text {
+  position: relative;
   font-size: 16px;
   padding-left: 30px;
 }
@@ -727,7 +728,7 @@ body {
   border: 1px solid #3ea1d1;
 }
 .form-checkbox__text::after {
-  opacity: 0;
+  opacity: 1;
   width: 19.414px;
   height: 14.621px;
   left: 1.29px;

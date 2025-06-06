@@ -759,6 +759,7 @@ img{
 
 }
 .form-checkbox__text{
+  position: relative;
   font-size: 16px;
   padding-left: 30px;
 
@@ -784,7 +785,7 @@ img{
   }
 
   &::after{
-    opacity: 0;
+    opacity: 1;
     width: 19.414px;
     height: 14.621px;
     left: 1.29px;
