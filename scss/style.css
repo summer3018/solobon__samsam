@@ -581,8 +581,22 @@ body {
   }
 }
 
+.contact {
+  padding-block: 56px;
+  background: url(../image/sp/contact_bg.jpg) no-repeat center center/cover;
+}
+
+.contact__head {
+  color: #3ea1d1;
+}
+
+.contact__text {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
 .contact__text .is-required {
-  color: red;
+  color: #e7728e;
 }
 
 .form-labae__required {

@@ -606,18 +606,26 @@ img{
 
 // contact
 .contact{
-
+  padding-block: 56px;
+  background: url(../image/sp/contact_bg.jpg) no-repeat center center / cover;
 }
 .contact__inner{
 
+}
+.contact__head{
+  color: $main-color;
 }
 .contact__form{
 
 
 }
 .contact__text{
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  
   .is-required{
-    color: red;
+    color: #e7728e;
   
   }
 
