@@ -628,24 +628,42 @@ body {
 }
 
 .form-text {
-  display: block;
-  width: 320px;
-  padding: 0.5em;
-  border: 1px solid #ccc;
+  width: 100%;
+  height: 40px;
+  border: none;
   font-size: 16px;
-  background: var(--ffffff, #FFF);
+  background: #FFF;
   box-shadow: 5px 6px 16px 0px rgba(96, 96, 96, 0.16);
 }
 
-.form-textarea {
-  display: block;
-  width: 320px;
-  height: auto;
-  padding: 0.5em;
-  border: 1px solid #ccc;
+.form-radio__text {
   font-size: 16px;
-  background: var(--ffffff, #FFF);
+  letter-spacing: 0.026px;
+  color: #3ea1d1;
+  border: 1px solid #fff;
+  background: #FFF;
+}
+
+.form-radio {
+  position: relative;
+}
+
+.form-radio__input {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.form-textarea {
+  width: 100%;
+  height: 122px;
+  border: none;
+  font-size: 16px;
+  background: #FFF;
   box-shadow: 5px 6px 16px 0px rgba(96, 96, 96, 0.16);
+  resize: vertical;
 }
 
 .form-checkbox__text {
