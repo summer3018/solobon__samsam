@@ -571,13 +571,21 @@ body {
 }
 
 .concept2__text {
-  font-size: 14px;
   margin-top: 22px;
+  font-size: 14px;
 }
 @media screen and (min-width: 768px) {
   .concept2__text {
     font-size: 16px;
     font-weight: 300;
   }
+}
+
+.contact__text .is-required {
+  color: red;
+}
+
+.form-labae__required {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
