@@ -612,12 +612,13 @@ body {
 
 .form-label {
   display: inline-flex;
-  background: #3ea1d1;
+  background: rgba(62, 161, 209, 0.7);
   color: #fff;
   font-size: 14px;
   font-weight: 600;
   gap: 4px;
   align-items: center;
+  padding: 4px 16px;
 }
 
 .form-labae__required {
@@ -626,6 +627,27 @@ body {
   font-weight: 600;
 }
 
+.form-text {
+  display: block;
+  width: 320px;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background: var(--ffffff, #FFF);
+  box-shadow: 5px 6px 16px 0px rgba(96, 96, 96, 0.16);
+}
+
 .form-textarea {
-  width: 70%;
+  display: block;
+  width: 320px;
+  height: auto;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background: var(--ffffff, #FFF);
+  box-shadow: 5px 6px 16px 0px rgba(96, 96, 96, 0.16);
+}
+
+.form-checkbox__text a {
+  color: #3ea1d1;
 }/*# sourceMappingURL=style.css.map */
