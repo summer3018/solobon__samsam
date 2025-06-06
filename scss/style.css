@@ -649,6 +649,14 @@ body {
   box-shadow: 5px 6px 16px 0px rgba(96, 96, 96, 0.16);
 }
 
+.form-checkbox__text {
+  text-align: center;
+  font-family: "Noto Serif JP";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 170%; /* 27.2px */
+  margin-top: 28px;
+}
 .form-checkbox__text a {
   color: #3ea1d1;
   border-bottom: 1px solid #3ea1d1;

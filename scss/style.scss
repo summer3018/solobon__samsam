@@ -733,7 +733,12 @@ img{
 
 }
 .form-checkbox__text{
-
+  text-align: center;
+  font-family: "Noto Serif JP";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 170%; /* 27.2px */
+  margin-top: 28px;
   a{
     color: $main-color;
     border-bottom: 1px solid $main-color;
