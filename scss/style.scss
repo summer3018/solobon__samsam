@@ -130,7 +130,7 @@ html{
     @include mq(md) {
       transition: opacity 0.3s;
       &:hover{
-        opacity: 0.8;
+        opacity: 0.6;
       }
     }
   }
@@ -793,6 +793,10 @@ img{
   background: #FFF;
   box-shadow: 5px 6px 16px 0px rgba(96, 96, 96, 0.16);
 
+  &:focus{
+    outline: $main-color auto 1px;
+    box-shadow: 5px 6px 16px 0px rgba(96, 96, 96, 0.16), inset 0 0 0 2px $main-color;
+  }
 
 }
 // ラジオボタン
@@ -836,6 +840,11 @@ img{
     color: #fff;
   }
 
+  &:focus + .form-radio__text {
+    outline: $main-color auto 1px;
+    box-shadow: 5px 6px 16px 0px rgba(96, 96, 96, 0.16), inset 0 0 0 2px $main-color;
+  }
+
 }
 
 // テキストエリア
@@ -847,6 +856,11 @@ img{
   background: #FFF;
   box-shadow: 5px 6px 16px 0px rgba(96, 96, 96, 0.16);
   resize: vertical;
+
+  &:focus{
+    outline: $main-color auto 1px;
+    box-shadow: 5px 6px 16px 0px rgba(96, 96, 96, 0.16), inset 0 0 0 2px $main-color;
+  }
 
 }
 
@@ -865,6 +879,14 @@ img{
     &::after{
       opacity: 1;
     }
+  }
+
+  &:focus + .form-checkbox__text {
+    &::before{
+      outline: $main-color auto 1px;
+      box-shadow: 5px 6px 16px 0px rgba(96, 96, 96, 0.16), inset 0 0 0 2px $main-color;
+    }
+
   }
 
 }
@@ -928,7 +950,7 @@ img{
     @include mq(md) {
       transition: opacity 0.3s;
       &:hover{
-        opacity: 0.8;
+        opacity: 0.6;
       }
     }
   }
@@ -950,7 +972,12 @@ img{
   font-size: 12px;
 }
 .footer__menu-link{
-
+  @include mq(md) {
+    transform: opacity 0.3s;
+    &:hover{
+      opacity: 0.6;
+    }
+  }
 }
 .footer__sns-items{
   margin-top: 12px;
@@ -969,6 +996,13 @@ img{
 .footer__sns-link{
   img{
 
+  }
+
+  @include mq(md) {
+    transform: opacity 0.3s;
+    &:hover{
+      opacity: 0.6;
+    }
   }
 }
 .footer__copyright{
