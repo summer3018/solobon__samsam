@@ -31,7 +31,7 @@ body {
   font-weight: 600;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 27px;
   align-items: center;
   line-height: 100%;
 }
@@ -117,7 +117,7 @@ html {
   .header__lists {
     flex-direction: row;
     align-items: center;
-    gap: 46px;
+    gap: 47px;
   }
 }
 
@@ -299,7 +299,7 @@ html {
 }
 
 .concept__text {
-  margin-top: 22px;
+  margin-top: 21px;
 }
 @media screen and (min-width: 768px) {
   .concept__text {
@@ -310,7 +310,7 @@ html {
 .feature__cards {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 48px;
 }
 @media screen and (min-width: 768px) {
   .feature__cards {
@@ -332,6 +332,12 @@ html {
 .feature__card {
   background: #FFF;
   box-shadow: 3px 3px 15px 0px rgba(96, 96, 96, 0.16);
+}
+
+@media screen and (min-width: 768px) {
+  .feature-card {
+    flex: 1;
+  }
 }
 
 .feature__card__image img {
@@ -387,6 +393,12 @@ html {
   font-size: 14px;
   font-weight: 600;
 }
+@media screen and (min-width: 768px) {
+  .about__text {
+    margin-top: 23px;
+    font-size: 16px;
+  }
+}
 
 .products__inner {
   padding-inline: 56px;
@@ -401,7 +413,7 @@ html {
 .products__cards {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 41px;
 }
 @media screen and (min-width: 768px) {
   .products__cards {
@@ -412,6 +424,12 @@ html {
 @media screen and (min-width: 900px) {
   .products__cards {
     gap: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products__card {
+    flex: 1;
   }
 }
 
@@ -447,7 +465,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .products__button {
-    margin-top: 44px;
+    margin-top: 43px;
   }
 }
 
@@ -461,11 +479,11 @@ html {
 .news__cards {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 27px;
 }
 @media screen and (min-width: 768px) {
   .news__cards {
-    gap: 24px;
+    gap: 23px;
   }
 }
 
@@ -475,7 +493,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .news__card {
-    padding-bottom: 24px;
+    padding-bottom: 23px;
   }
 }
 
@@ -651,7 +669,7 @@ html {
 }
 
 .contact__submit {
-  margin-top: 23px;
+  margin-top: 24px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -798,6 +816,7 @@ html {
 .form-checkbox__text::before, .form-checkbox__text::after {
   content: "";
   position: absolute;
+  transform: translateY(2px);
   left: 0;
   inset-block: 0;
   margin-block: auto;
@@ -831,6 +850,14 @@ html {
   display: block;
   margin-inline: auto;
 }
+@media screen and (min-width: 768px) {
+  .footer__logo a {
+    transition: opacity 0.3s;
+  }
+  .footer__logo a:hover {
+    opacity: 0.8;
+  }
+}
 
 .footer__menu-items {
   margin-top: 22px;
@@ -852,7 +879,7 @@ html {
 }
 
 .footer__sns-items {
-  margin-top: 18px;
+  margin-top: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -860,7 +887,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .footer__sns-items {
-    margin-top: 20px;
+    margin-top: 16px;
   }
 }
 
