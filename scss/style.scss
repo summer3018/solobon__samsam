@@ -703,6 +703,7 @@ img{
     padding-top: 5px;
     padding-bottom: 4px;
     padding-inline: 4px;
+    clip-path: polygon(0 0, 97% 0, 100% 50%, 97% 100%, 0 100%);
   }
 
 }
