@@ -802,8 +802,66 @@ body {
   background: url(../image/check-icon.jpg) no-repeat center center/contain;
 }
 
+.footer {
+  padding-block: 40px 7px;
+  background: #f7f7f7;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-bottom: 14px;
+  }
+}
+
 .footer__logo a img {
   width: 120px;
   display: block;
+  margin-inline: auto;
+}
+
+.footer__menu-items {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__menu-items {
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+  }
+}
+
+.footer__menu-item {
+  font-size: 12px;
+}
+
+.footer__sns-items {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .footer__sns-items {
+    margin-top: 20px;
+  }
+}
+
+.footer__copyright {
+  font-size: 12px;
+  margin-top: 24px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__copyright {
+    margin-top: 28px;
+  }
+}
+.footer__copyright small {
+  color: #888;
+  font-size: inherit;
 }
 /*# sourceMappingURL=style.css.map */
