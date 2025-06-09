@@ -704,6 +704,9 @@ body {
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
+.form-checkbox__input:checked + .form-checkbox__text::after {
+  opacity: 1;
+}
 
 .form-checkbox__text {
   position: relative;
@@ -728,7 +731,7 @@ body {
   border: 1px solid #3ea1d1;
 }
 .form-checkbox__text::after {
-  opacity: 1;
+  opacity: 0;
   width: 19.414px;
   height: 14.621px;
   left: 1.29px;
