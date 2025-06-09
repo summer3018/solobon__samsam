@@ -161,6 +161,11 @@ html{
   @include mq(md) {
     color: $black;
     font-size: 16px;
+    transition: color 0.3s;
+
+    &:hover{
+      color: $main-color;
+    }
   }
 }
 
@@ -464,12 +469,29 @@ html{
   }
 }
 .products-card{
+  @include mq(md) {
+    &:hover{
+      .products-card__image{
+        img{
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
 
 }
 .products-card__image{
   text-align: center;
   img{
     width: 100%;
+  }
+
+  @include mq(md) {
+    overflow: hidden;
+
+    img{
+      transition: transform 0.5s;
+    }
   }
 }
 .products-card__body{
