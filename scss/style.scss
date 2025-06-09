@@ -550,16 +550,27 @@ html{
     display: flex;
     align-items: flex-start;
     gap: 40px;
+
+    &:hover{
+      .news-card__image{
+        img{
+          transform: scale(1.1);
+        }
+      }
+    }
   }
 }
 .news-card__image{
   @include mq(md) {
     width: 260px;
     flex-shrink: 0;
-  }
-  img{
+    overflow: hidden;
 
+    img{
+      transition: transform 0.5s;
+    }
   }
+
 }
 .news-card__body{
   margin-top: 16px;
