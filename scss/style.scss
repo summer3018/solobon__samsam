@@ -126,6 +126,13 @@ html{
       width: 120px;
       display: block;
     }
+
+    @include mq(md) {
+      transition: opacity 0.3s;
+      &:hover{
+        opacity: 0.8;
+      }
+    }
   }
 }
 

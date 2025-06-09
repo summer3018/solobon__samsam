@@ -101,6 +101,14 @@ html {
   width: 120px;
   display: block;
 }
+@media screen and (min-width: 768px) {
+  .header__logo a {
+    transition: opacity 0.3s;
+  }
+  .header__logo a:hover {
+    opacity: 0.8;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .header__icon {
