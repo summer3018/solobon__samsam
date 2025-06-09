@@ -90,10 +90,23 @@ body{
   }
 }
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: $header-height-sp; // スクロール位置の調整(ヘッダーの高さ分) 
+
+  @include mq(md) {
+    scroll-padding-top: $header-height-pc;
+  }
+}
 
 // header(ヘッダー)
 .header{
   height: $header-height-sp;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
   @include mq(md) {
     height: $header-height-pc;
   }
