@@ -799,4 +799,9 @@ body {
   height: 14.621px;
   left: 1.29px;
   background: url(../image/check-icon.jpg) no-repeat center center/contain;
+}
+
+.footer__logo a img {
+  width: 120px;
+  display: block;
 }/*# sourceMappingURL=style.css.map */
